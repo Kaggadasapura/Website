@@ -1,345 +1,149 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #fffef0; /* Soft white */
-    color: #333;
-    margin: 0;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kaggadasapura Toastmasters Club - Empowering confident communicators and leaders.">
+    <meta name="keywords" content="Toastmasters, public speaking, leadership, communication, meetings, networking">
+    <title>Kaggadasapura Toastmasters Club</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
-/* Navigation Bar */
-header {
-    background-color: #772432; /* Toastmasters Maroon */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 10px 0;
-}
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <img src="./Assets/toastmasters-logo-color.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About Us</a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="ExCom.html">ExCom</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+                <input type="text" placeholder="Search" class="search-bar">
+            </nav>
+        </div>
+    </header>
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    <!-- Hero Section -->
+    <section class="overlapped-section" id="home" style="background-image: url('Assets/IMG_20240525_092539.jpg');">
+        <div class="overlay">
+            <div class="content">
+                <h1>Kaggadasapura Toastmasters Club</h1>
+                <h2>Empowering Confident Communicators and Leaders</h2>
+                <a href="https://chat.whatsapp.com/Gd8UDkE3geG4UFzKl6s0a5" target="_blank" class="whatsapp-link">Join Our Guest Group</a>
+            </div>
+        </div>
+    </section>
 
-.logo {
-    max-width: 150px;
-    margin-right: auto;
-}
+    <!-- Meetings Section -->
+    <section id="meetings" class="meetings-section">
+        <h1>Meetings</h1>
+        <div class="heading">
+            <div class="meeting-details">
+                <div class="meeting-info">
+                    <h3>Regular Meetings</h3>
+                    <ul>
+                        <li><strong>Kaggadasapura Toastmasters Club</strong> meets every <strong>Saturday</strong> from <strong>11:00 AM - 12:30 PM</strong></li>
+                        <li><strong>Active Participation:</strong> Members take on roles such as speakers and evaluators, promoting personal development in communication and leadership.</li>
+                        <li><strong>Inclusive Environment:</strong> Welcoming all experience levels for growth and confidence building.</li>
+                        <li><strong>Online:</strong> <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2QyY2Y4ZmQtN2ZhYy00YjFmLWJkZTktOGZmOGVkNDJjMTQ2%40thread.v2/0?context=%7b%22Tid%22%3a%228ac47bf0-3832-41be-9f50-f17276792c1c%22%2c%22Oid%22%3a%22df0680dc-508a-4397-93a9-efdca338852a%22%7d" target="_blank" class="meeting-link">Join Online</a></li>
+                        <li><strong>Offline:</strong> <b>Scholar Minds Kaggadasapura, Above SBI</b>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.896622012339!2d77.67690137454669!3d12.97846341472882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1166dfe8247f%3a0x2232f9e1f90f4f11!2sState%20Bank%20of%20India!5e0!3m2!1sen!2sin!4v1731907695069!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </li>
+                    </ul>
+                </div>
 
-nav {
-    display: flex;
-    align-items: center;
-}
+                <div class="meeting-info">
+                    <h3>Special Events</h3>
+                    <p>At <strong>Kaggadasapura Toastmasters Club</strong>, we host various special events to enhance our members' experience:</p>
+                    <ul>
+                        <li><strong>Linkers Meeting:</strong> Collaborative sessions to build connections and foster networking.</li>
+                        <li><strong>Educational Sessions:</strong> Workshops covering speech crafting, body language, and leadership techniques.</li>
+                        <li><strong>Rendezvous Meetings:</strong> Informal gatherings to share experiences and insights.</li>
+                        <li><strong>Celebratory Events:</strong> Milestone Meetings to recognize and celebrate achievements.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    align-items: center;
-}
+    <!-- Why Join Us Section -->
+    <section id="why-join-us" class="why-join-us-section">
+        <div class="heading">
+            <h1>Why Should You Join Us?</h1>
+        </div>
 
-.nav-links li {
-    margin-left: 20px; /* Adjust this to control spacing */
-    position: relative;
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
-}
+        <div class="container1">
+            <div class="points-container">
+                <div class="point">
+                    <strong>🎤 Develop Public Speaking Skills:</strong>
+                    <p>Gain confidence and clarity in expressing your ideas.</p>
+                </div>
+                <div class="point">
+                    <strong>👔 Leadership Opportunities:</strong>
+                    <p>Take on leadership roles and sharpen your organizational skills.</p>
+                </div>
+                <div class="point">
+                    <strong>🤝 Supportive Environment:</strong>
+                    <p>Receive constructive feedback and grow at your own pace.</p>
+                </div>
+                <div class="point">
+                    <strong>🎉 Diverse Learning Experiences:</strong>
+                    <p>Engage in themed meetings and hear from inspiring guest speakers.</p>
+                </div>
+                <div class="point">
+                    <div style="text-align: center;">
+                        <strong>🌏 Networking:</strong>
+                        <p>Connect with professionals and expand your personal network.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 8px 12px;
-    transition: color 0.3s ease;
-}
+    <!-- Glimpses of Meetings Section -->
+    <section id="glimpses" class="glimpses-section">
+        <div class="heading">
+            <h1>Glimpses of Our Meetings</h1>
+        </div>
+        <div class="gallery">
+            <img height="300px" width="500px" src="./Assets/IMG_20240525_092539.jpg" alt="Meeting Photo 1" class="gallery-item">
+            <img height="300px" width="500px" src="./Assets/IMG_20240525_110234.jpg" alt="Meeting Photo 2" class="gallery-item">
+            <img height="300px" width="500px" src="./Assets/Rendezvous Meeting members photo .jpg" alt="Meeting Photo 3" class="gallery-item">
+            <img height="300px" width="500px" src="./Assets/Rendezvous Meeting.jpg" alt="Meeting Photo 4" class="gallery-item">
+        </div>
+    </section>
 
-.nav-links li a:hover {
-    color: #ffd700; /* Gold color on hover */
-}
+    <!-- Join Us Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Info Section -->
+            <div class="footer-contact">
+                <a href="tel:+91 " class="footer-link">
+                    <i class="fas fa-phone-alt"></i> +91 9380258206
+                </a>
+                <a href="mailto:kaggadasapuratoastmastersclub@gmail.com" class="footer-link">
+                    <i class="fas fa-envelope"></i> kaggadasapuratoastmastersclub@gmail.com
+                </a>
+                <a href="https://www.instagram.com/tmi_kaggadasapura/" class="footer-link" target="_blank">
+                    <i class="fab fa-instagram"></i> tmi_kaggadasapura
+                </a>
+            </div>
+        </div>
+    </footer>
 
-/* Dropdown Styles for About Us */
-.dropdown {
-    position: relative;
-}
+    <script src="script.js"></script>
+</body>
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff; /* White background */
-    min-width: 160px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-}
-
-.dropdown-content li {
-    margin: 0;
-}
-
-.dropdown-content li a {
-    color: #333;
-    padding: 10px;
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f1f1f1; /* Light grey on hover */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Search Bar */
-.search-bar {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-
-.search-bar:focus {
-    outline: none;
-    border-color: #0056b3;
-    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
-}
-
-/* Hero Section */
-.overlapped-section {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    text-align: center;
-    z-index: 2;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-/* WhatsApp Link */
-.whatsapp-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #25D366;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-}
-
-.whatsapp-link:hover {
-    background-color: #20b358;
-}
-
-/* Meetings Section */
-.meetings-section {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.meeting-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    background-color: #FFFFFF;
-}
-
-/* Why Join Us Section */
-.why-join-us-section {
-    padding: 80px 20px;
-    background-color: #FFFFFF;
-}
-
-.points-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.point {
-    flex: 1 1 45%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.point strong {
-    display: block;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.point p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Glimpses Section */
-.glimpses-section {
-    padding: 80px 20px;
-    background-color: #f1f1f1;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.gallery-item {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-}
-
-/* Footer Styles */
-.footer {
-    background-color: #004165; /* Toastmasters Blue */
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-/* Join Form Section */
-.join-form-section {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.join-form-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    margin-bottom: 15px;
-    transition: border 0.3s ease;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #004165; /* Toastmasters Blue */
-}
-
-.submit-btn {
-    background-color: #004165; /* Toastmasters Blue */
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #00334d; /* Darker Blue */
-}
-
-/* Mobile Menu */
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.menu-icon {
-    font-size: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .search-bar {
-        width: 100%;
-    }
-
-    .meeting-details {
-        flex-direction: column;
-    }
-
-    .points-container {
-        flex-direction: column;
-    }
-}
+</html>
