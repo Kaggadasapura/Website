@@ -93,12 +93,13 @@ nav {
 }
 
 .dropdown-content li a {
-    color: #333;
-    padding: 10px;
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
+        color: #333;
+        padding: 10px;
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center; /* Align text centrally */
+        text-decoration: none;    
 }
 
 .dropdown-content li a:hover {
@@ -287,6 +288,55 @@ h2 {
 .show-more-btn:hover {
     background-color: #004080;
 }
+
+/* Achievements Section */
+.achievements-section {
+    padding: 80px 20px;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Neutral text color */
+}
+
+.achievements-section .heading h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #004165; /* Toastmasters blue */
+    margin-bottom: 40px;
+}
+
+.achievements-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.achievements-content li {
+    flex: 1 1 calc(45% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+
+
+/* Adjusting Image Size to Passport Size */
+.achievement-img {
+    width: 400px; /* Passport size width */
+    height: 300px; /* Passport size height */
+    object-fit: cover; /* Ensures the image fills the box */
+    margin-top: 15px;
+    border-radius: 8px;
+    
+}
+
 
 /* Join Us Section */
 .join-us-section {
